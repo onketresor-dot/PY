@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sécurité Informatique | Groupe La Passerelle</title>
+    <link rel="stylesheet" href="./asset/stule/S6.CSS">
+</head>
+
+<body>
+<header>
+    <div class="logo">Groupe la Passerelle</div>
+
+    <nav id="nav">
+          <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="rex.html">Réseau</a></li>
+                <li><a href="progra.html">Programmation</a></li>
+                <li><a href="annali.html">Bases de données</a></li>
+                <li><a href="secure.html">Sécurité</a></li>
+                <li><a href="bd.html">Analyse</a></li>
+                <li><a href="actua.html">Actualités</a></li>
+                <li><a href="re.html">Recrutement</a></li>
+                <li><a href="conact.html">Contact</a></li>
+    </nav>
+
+    <div class="actions">
+        <button id="darkMode">🌙</button>
+        <button id="burger">☰</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Sécurité Informatique</h1>
+        <p>
+            Nous protégeons les systèmes d’information du Groupe La Passerelle
+            grâce à des audits avancés et des solutions de cybersécurité robustes.
+        </p>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h2>🔐 Audit Zéro Trust</h2>
+            <p>
+                Notre approche Zéro Trust repose sur le principe :
+                <strong>« Ne jamais faire confiance, toujours vérifier »</strong>.
+            </p>
+            <ul>
+                <li>Analyse complète des accès</li>
+                <li>Contrôle des identités et authentification forte</li>
+                <li>Détection des failles de sécurité</li>
+                <li>Rapport détaillé et recommandations</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🛡️ Cybersécurité</h2>
+            <p>
+                Nous mettons en place une sécurité globale pour protéger
+                vos données et infrastructures.
+            </p>
+            <ul>
+                <li>Protection des réseaux et serveurs</li>
+                <li>Sécurisation des applications web</li>
+                <li>Prévention des attaques (phishing, ransomwares)</li>
+                <li>Surveillance et réponse aux incidents</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="why">
+        <h2>Pourquoi nous faire confiance ?</h2>
+        <p>
+            Le Groupe La Passerelle accompagne les entreprises dans la protection
+            de leurs systèmes informatiques avec des solutions fiables,
+            modernes et conformes aux normes internationales.
+        </p>
+    </section>
+</main>
+
+   <footer>
+  © 2026 Groupe La Passerelle
+</footer>
+
+<script>
+  const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
+const darkMode = document.getElementById("darkMode");
+
+burger.addEventListener("click", () => {
+    nav.classList.toggle("show");
+});
+
+darkMode.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
+
+</script>
+</body>
+</html>

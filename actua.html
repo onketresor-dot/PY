@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Actualité | Groupe La Passerelle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./asset/stule/S7.CSS">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Groupe la Passerelle</div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="rex.html">Réseau</a></li>
+                <li><a href="progra.html">Programmation</a></li>
+                <li><a href="annali.html">Bases de données</a></li>
+                <li><a href="secure.html">Sécurité</a></li>
+                <li><a href="bd.html">Analyse</a></li>
+                <li><a href="actua.html">Actualités</a></li>
+                <li><a href="re.html">Recrutement</a></li>
+                <li><a href="conact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+            <button class="burger" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Espace Actualité – Nouvelles Technologies</h1>
+
+    <!-- ===== CARROUSEL ===== -->
+    <section class="carousel">
+        <button class="prev" onclick="prevSlide()">❮</button>
+
+        <div class="carousel-container">
+            <img src="./asset/800-L-un-chronographe-unique-au-monde-qui-rvolutionne-le-chronomtrage.jpg" class="slide active" alt="Intelligence Artificielle">
+            <img src="./asset/maxim-hopman-IayKLkmz6g0-unsplash.jpg" class="slide" alt="Big Data">
+            <img src="./asset/pexels-tima-miroshnichenko-6498730.jpg" class="slide" alt="Développement Web">
+            <img src="./asset/muhammad-ma-ruf-0fkgMCYNtRw-unsplash.jpg" class="slide" alt="Cybersécurité">
+        </div>
+
+        <button class="next" onclick="nextSlide()">❯</button>
+    </section>
+
+    <!-- ===== ARTICLES ===== -->
+    <section class="articles">
+        <article class="article">
+            <h3>Intelligence Artificielle & Innovation</h3>
+            <p>Automatisation et analyse intelligente des données du groupe.</p>
+            <span class="tag">IA</span>
+        </article>
+
+        <article class="article">
+            <h3>Big Data & Analyse Avancée</h3>
+            <p>Traitement massif des données pour la prise de décision.</p>
+            <span class="tag">Big Data</span>
+        </article>
+
+        <article class="article">
+            <h3>Développement Web Moderne</h3>
+            <p>Sites et applications web rapides, responsives et sécurisés.</p>
+            <span class="tag">Web</span>
+        </article>
+
+        <article class="article">
+            <h3>Cybersécurité</h3>
+            <p>Protection des systèmes et des informations sensibles.</p>
+            <span class="tag">Sécurité</span>
+        </article>
+    </section>
+</main>
+ <footer>
+  © 2026 Groupe La Passerelle
+</footer>
+
+<script>
+    function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+
+/* ===== CAROUSEL ===== */
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[i].classList.add("active");
+}
+
+function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+}
+
+function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+}
+
+// Auto
+setInterval(nextSlide, 5000);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de données | Groupe La Passerelle</title>
+    <link rel="stylesheet" href="./asset/stule/S9.CSS">
+</head>
+
+<body>
+<header>
+    <h1>Groupe la passerelle</h1>
+
+    <div class="burger" id="burger">☰</div>
+
+    <nav id="nav">
+         <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <a href="rex.html">Réseau</a>
+                <a href="progra.html">Programmation</a>
+                <a href="annali.html">Bases de données</a>
+                <a href="secure.html">Sécurité</a>
+                <a href="bd.html">Analyse</a>
+                <a href="actua.html">Actualités</a>
+                <a href="re.html">Recrutement</a>
+                <a href="conact.html">Contact</a>
+        <button id="mode">🌙</button>
+    </nav>
+</header>
+
+<section class="intro">
+    <h2>Groupe La Passerelle</h2>
+    <p>
+        Le Groupe La Passerelle accompagne les entreprises dans la
+        conception, la modélisation et l’administration de bases de données
+        professionnelles.
+    </p>
+</section>
+
+<section>
+    <h2>Modélisations des bases de données</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>MCD</h3>
+            <p>Modèle conceptuel des données indépendant du SGBD.</p>
+        </div>
+        <div class="card">
+            <h3>MLD</h3>
+            <p>Transformation relationnelle des données.</p>
+        </div>
+        <div class="card">
+            <h3>MPD</h3>
+            <p>Implémentation physique dans la base SQL.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Administration SQL</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Gestion</h3>
+            <ul>
+                <li>Création des bases</li>
+                <li>Utilisateurs et rôles</li>
+                <li>Sauvegardes</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Sécurité</h3>
+            <ul>
+                <li>Permissions</li>
+                <li>Audit</li>
+                <li>Protection des données</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Notes SQL des administrateurs</h2>
+    <div class="card">
+        <ul>
+            <li>Éviter SELECT *</li>
+            <li>Indexer intelligemment</li>
+            <li>Sauvegardes automatiques</li>
+            <li>Documentation des schémas</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    © 2026 – Groupe La Passerelle
+</footer>
+
+<script>
+    const burger = document.getElementById("burger");
+const nav = document.getElementById("nav");
+const mode = document.getElementById("mode");
+
+burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+mode.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
+
+</script>
+</body>
+</html>

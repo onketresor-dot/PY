@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe La Passerelle | Expertise Réseau</title>
+
+    <link rel="stylesheet" href="./asset/stule/S3.CSS">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="logo">Groupe la Passerelle</div>
+
+    <ul class="nav-links" id="nav-links">
+                 <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="rex.html">Réseau</a></li>
+                <li><a href="progra.html">Programmation</a></li>
+                <li><a href="annali.html">Bases de données</a></li>
+                <li><a href="secure.html">Sécurité</a></li>
+                <li><a href="bd.html">Analyse</a></li>
+                <li><a href="actua.html">Actualités</a></li>
+                <li><a href="re.html">Recrutement</a></li>
+                <li><a href="conact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+        <button id="darkModeBtn">🌙</button>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <h1>Expertise Réseau</h1>
+    <p>Installation, configuration et maintenance du réseau</p>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main>
+    <section class="intro">
+        <h2>Notre expertise réseau</h2>
+        <p>
+            Le Groupe La Passerelle conçoit, déploie et maintient des
+            infrastructures réseau sécurisées et performantes.
+        </p>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <h3>Installation réseau</h3>
+            <ul>
+                <li>Analyse des besoins</li>
+                <li>Architecture réseau</li>
+                <li>Câblage informatique</li>
+                <li>Installation des équipements</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Configuration réseau</h3>
+            <ul>
+                <li>Routeurs et switchs</li>
+                <li>VLAN et IP</li>
+                <li>Sécurisation des accès</li>
+                <li>Services réseau</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance réseau</h3>
+            <ul>
+                <li>Supervision</li>
+                <li>Gestion des pannes</li>
+                <li>Optimisation</li>
+                <li>Support technique</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 Groupe La Passerelle</p>
+</footer>
+
+<script>
+    // MENU BURGER
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("nav-links");
+
+burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+// MODE SOMBRE
+const darkModeBtn = document.getElementById("darkModeBtn");
+
+darkModeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    darkModeBtn.textContent =
+        document.body.classList.contains("dark") ? "☀️" : "🌙";
+});
+
+</script>
+</body>
+</html>

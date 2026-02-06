@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --bg: #ffffff;
+    --text: #222;
+    --primary: #005bea;
+    --card: #f4f4f4;
+}
+
+body.dark {
+    --bg: #121212;
+    --text: #eee;
+    --primary: #3f8cff;
+    --card: #1f1f1f;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* NAVBAR */
+header {
+    background: var(--primary);
+    color: white;
+    padding: 15px;
+    
+    background-color: #2c3e50;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+       font-size: 0.85rem;
+}
+
+.burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, var(--primary), #002f6c);
+    color: white;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* JOBS */
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.job {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FORM */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: var(--primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+   
+    color: rgb(27, 24, 24);
+    text-align: center;
+    padding: 20px;
+    
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: var(--primary);
+        top: 65px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}

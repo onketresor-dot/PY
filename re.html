@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutement | Groupe La Passerelle</title>
+    <link rel="stylesheet" href="./asset/stule/S2.CSS">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Groupe La Passerelle</div>
+
+                   <nav class="nav-links" id="nav">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html">Présentation</a>
+                <a href="rex.html">Réseau</a>
+                <a href="progra.html">Programmation</a>
+                <a href="annali.html">Bases de données</a>
+                <a href="secure.html">Sécurité</a>
+                <a href="bd.html">Analyse</a>
+                <a href="actua.html">Actualités</a>
+                <a href="re.html">Recrutement</a>
+                <a href="conact.html">Contact</a>
+        </nav>
+
+        <div class="actions">
+            <span class="burger" onclick="toggleMenu()">☰</span>
+            <button onclick="toggleDark()">🌙</button>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Recrutement</h1>
+    <p>Rejoignez le Groupe La Passerelle</p>
+</section>
+
+<section>
+    <h2>Pourquoi nous rejoindre ?</h2>
+    <p class="center-text">
+        Nous croyons au talent, à l’innovation et à la formation continue.
+        Venez bâtir votre avenir professionnel avec nous.
+    </p>
+</section>
+
+<section>
+    <h2>Offres disponibles</h2>
+    <div class="jobs">
+        <div class="job">
+            <h3>Développeur Web</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="job">
+            <h3>Analyste de données</h3>
+            <p>Big Data & Statistiques</p>
+        </div>
+
+        <div class="job">
+            <h3>Ingénieur Réseau</h3>
+            <p>Réseaux & Sécurité</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Candidature</h2>
+    <form>
+        <input type="text" placeholder="Nom complet" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Poste souhaité">
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Groupe La Passerelle
+</footer>
+<script>
+    function toggleMenu() {
+    document.getElementById("nav").classList.toggle("active");
+}
+
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
+
+</script>
+</body>
+</html>

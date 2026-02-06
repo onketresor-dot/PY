@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe La Passerelle | Programmation Web</title>
+    <link rel="stylesheet" href="./asset/stule/S4.CSS">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="logo">Groupe la Passerelle</div>
+
+    <ul class="nav-links" id="nav-links">
+             <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="rex.html">Réseau</a></li>
+                <li><a href="progra.html">Programmation</a></li>
+                <li><a href="annali.html">Bases de données</a></li>
+                <li><a href="secure.html">Sécurité</a></li>
+                <li><a href="bd.html">Analyse</a></li>
+                <li><a href="actua.html">Actualités</a></li>
+                <li><a href="re.html">Recrutement</a></li>
+                <li><a href="conact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+        <button id="darkModeBtn">🌙</button>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <h1>Expertise Programmation</h1>
+    <p>Développement web et création de sites modernes</p>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main>
+    <section class="intro">
+        <h2>Développement web professionnel</h2>
+        <p>
+            Le Groupe La Passerelle conçoit des sites web performants,
+            sécurisés et adaptés aux besoins des entreprises modernes.
+        </p>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <h3>Création de sites web</h3>
+            <ul>
+                <li>Sites vitrines professionnels</li>
+                <li>Sites institutionnels</li>
+                <li>Sites e-commerce</li>
+                <li>Design moderne et ergonomique</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Développement web</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Applications web dynamiques</li>
+                <li>Interfaces responsives</li>
+                <li>Optimisation des performances</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance & évolution</h3>
+            <ul>
+                <li>Mise à jour des sites</li>
+                <li>Sécurité des applications</li>
+                <li>Ajout de fonctionnalités</li>
+                <li>Support technique continu</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 Groupe La Passerelle – Programmation Web</p>
+</footer>
+
+<script>
+    // MENU BURGER
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("nav-links");
+
+burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+// MODE SOMBRE
+const darkModeBtn = document.getElementById("darkModeBtn");
+
+darkModeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    darkModeBtn.textContent =
+        document.body.classList.contains("dark") ? "☀️" : "🌙";
+});
+
+</script>
+</body>
+</html>
